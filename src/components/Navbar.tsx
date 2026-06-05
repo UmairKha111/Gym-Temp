@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import gymData from "../data/gymData";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,12 +16,27 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-zinc-800">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <header className="fixed top-0 left-0 w-full bg-black/95 backdrop-blur-md z-50 border-b border-zinc-800">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 h-20">
 
-        <h1 className="text-2xl font-bold text-white">
-          {gymData.gymName}
-        </h1>
+        {/* Logo Section */}
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt={gymData.gymName}
+            className="h-14 w-14 object-cover rounded-full border-2 border-red-500"
+          />
+
+          <div>
+            <h1 className="text-lg md:text-xl font-bold text-white leading-tight">
+              {gymData.gymName}
+            </h1>
+
+            <p className="text-xs uppercase tracking-wider text-red-500">
+              Strength of Awadh
+            </p>
+          </div>
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
@@ -28,7 +44,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-gray-300 hover:text-red-500 transition"
+              className="text-gray-300 hover:text-red-500 transition duration-300"
             >
               {link.name}
             </a>
@@ -38,7 +54,7 @@ const Navbar = () => {
             href={`https://wa.me/${gymData.phone}`}
             target="_blank"
             rel="noreferrer"
-            className="bg-red-600 hover:bg-red-700 px-5 py-2 rounded-lg font-semibold"
+            className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-semibold transition duration-300"
           >
             Join Now
           </a>
@@ -47,7 +63,7 @@ const Navbar = () => {
         {/* Mobile Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-2xl"
+          className="md:hidden text-white text-2xl"
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -63,7 +79,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-gray-300"
+                className="text-gray-300 hover:text-red-500 transition"
               >
                 {link.name}
               </a>
@@ -73,7 +89,7 @@ const Navbar = () => {
               href={`https://wa.me/${gymData.phone}`}
               target="_blank"
               rel="noreferrer"
-              className="bg-red-600 text-center py-3 rounded-lg font-semibold"
+              className="bg-red-600 hover:bg-red-700 text-center py-3 rounded-lg font-semibold"
             >
               Join Now
             </a>
