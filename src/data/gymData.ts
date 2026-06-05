@@ -6,6 +6,8 @@ const gymData: GymData = {
   phone: "7309544367",
   city: "Lucknow",
 
+  address: "MGS Plaza, IIM Road, Near Eldeco Regalia, Lucknow",
+
   stats: [
     {
       value: "500+",
@@ -25,14 +27,31 @@ const gymData: GymData = {
     {
       name: "Monthly",
       price: "999",
+      features: [
+        "Unlimited Gym Access",
+        "Locker Facility",
+        "Basic Trainer Support",
+      ],
     },
+
     {
       name: "Quarterly",
       price: "2499",
+      features: [
+        "Unlimited Gym Access",
+        "Diet Guidance",
+        "Priority Support",
+      ],
     },
+
     {
       name: "Yearly",
       price: "7999",
+      features: [
+        "Unlimited Gym Access",
+        "Personal Guidance",
+        "Diet Plan",
+      ],
     },
   ],
 

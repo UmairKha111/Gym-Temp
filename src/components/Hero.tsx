@@ -9,8 +9,8 @@ const Hero = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <section
-        className="relative min-h-screen bg-cover bg-center"
+     <section
+  className="relative min-h-screen pt-28 md:pt-12 bg-cover bg-center"
         style={{
           backgroundImage: `url(${heroImage})`,
         }}

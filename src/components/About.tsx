@@ -1,22 +1,25 @@
 const About = () => {
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+    <section
+      id="about"
+      className="py-24 px-6 bg-black"
+    >
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         <div>
           <img
             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48"
             alt="Gym"
-            className="rounded-2xl"
+            className="rounded-2xl w-full"
           />
         </div>
 
         <div>
-          <p className="text-red-500 uppercase mb-3">
+          <p className="text-red-500 uppercase mb-3 tracking-wider">
             About Us
           </p>
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Best Gym In Lucknow
           </h2>
 

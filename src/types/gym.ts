@@ -3,6 +3,7 @@ export interface GymData {
   tagline: string;
   phone: string;
   city: string;
+  address: string;
 
   stats: {
     value: string;
@@ -12,6 +13,7 @@ export interface GymData {
   plans: {
     name: string;
     price: string;
+    features: string[];
   }[];
 
   trainers: {

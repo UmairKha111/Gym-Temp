@@ -24,11 +24,14 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-black">
+    <section
+      id="services"
+      className="py-24 px-6 bg-black"
+    >
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
-          <p className="text-red-500 uppercase mb-3">
+          <p className="text-red-500 uppercase tracking-wider mb-3">
             Our Programs
           </p>
 
@@ -42,7 +45,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-500 transition duration-300"
+              className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-500 hover:-translate-y-2 transition-all duration-300"
             >
               <div className="text-red-500 mb-6">
                 {service.icon}
@@ -52,7 +55,7 @@ const Services = () => {
                 {service.title}
               </h3>
 
-              <p className="text-gray-400">
+              <p className="text-gray-400 leading-7">
                 {service.desc}
               </p>
             </div>
