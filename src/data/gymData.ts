@@ -4,7 +4,7 @@ const gymData: GymData = {
   gymName: "Crafted Fitness Gym",
   tagline: "🏋️join us on the journey to a stronger ,happier you ",
   phone: "9601758319",
-  city: "Karelibaug",
+  city: "Karelibaug  ",
 
   address: "Address: 2nd Floor Chankya Complex, Near Avkar hall, Water Tank Road, Karelibaug -390018",
 

@@ -20,7 +20,7 @@ const About = () => {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Best Gym In Lucknow
+            Best Gym In Karelibaug
           </h2>
 
           <p className="text-gray-400 leading-8">
