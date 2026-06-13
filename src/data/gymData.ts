@@ -1,12 +1,12 @@
 import type { GymData } from "../types/gym";
 
 const gymData: GymData = {
-  gymName: "Awadh Fitness Gym",
-  tagline: "Transform Your Body Transform Your Life",
-  phone: "7309544367",
-  city: "Lucknow",
+  gymName: "Crafted Fitness Gym",
+  tagline: "🏋️join us on the journey to a stronger ,happier you ",
+  phone: "9601758319",
+  city: "Karelibaug",
 
-  address: "MGS Plaza, IIM Road, Near Eldeco Regalia, Lucknow",
+  address: "Address: 2nd Floor Chankya Complex, Near Avkar hall, Water Tank Road, Karelibaug -390018",
 
   stats: [
     {

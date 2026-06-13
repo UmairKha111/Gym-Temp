@@ -33,7 +33,7 @@ const Navbar = () => {
             </h1>
 
             <p className="text-xs uppercase tracking-wider text-red-500">
-              Strength of Awadh
+              Strength of Men
             </p>
           </div>
         </a>
